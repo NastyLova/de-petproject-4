@@ -1,0 +1,9 @@
+Для проверки работы проекта необходимо:
+1. Запустить контейнеры в docker compose
+2. Запустить ddl скрипты в следубщем порядке:
+	1. \src\ddl\create_tables_from_lessons.sql
+	2. \src\ddl\create_datamart.sql
+	3. \src\ddl\create_tables_dds.sql
+	4. \src\ddl\create_table_stg.sql
+	5. \src\ddl\add_columns_fct.sql
+3. Проверить работоспособность дагов в aiflow
